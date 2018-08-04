@@ -292,7 +292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4314691267427074}
   m_Layer: 0
-  m_Name: arena wals
+  m_Name: arena_wals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

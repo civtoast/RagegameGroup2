@@ -7,7 +7,8 @@ public class Player : MonoBehaviour
 
     public float moveSpeed = 5f;
     public float rotationSpeed = 180f;
-
+    public Animator animator;
+       
     void Start()
     {
 
@@ -25,6 +26,8 @@ public class Player : MonoBehaviour
 
         transform.Translate(movement * Time.deltaTime * moveSpeed);
         transform.Rotate(rotation * Time.deltaTime * rotationSpeed);
+        animator.SetFloat("Forward", vertical);
+        animator.SetFloat("Strafe", horizontal);
 
 
 

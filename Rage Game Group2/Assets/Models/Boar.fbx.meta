@@ -3,12 +3,44 @@ guid: 64f7f0acf4f718c40ae8ed19d0437557
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Armature
+    100002: Back
+    100004: Back_Leg_L
+    100006: Back_Leg_L_end
+    100008: Back_Leg_R
+    100010: Back_Leg_R_end
+    100012: //RootNode
+    100014: Cheast
+    100016: Cube
+    100018: Front_Leg_L
+    100020: Front_Leg_L_end
+    100022: Front_Leg_R
+    100024: Front_Leg_R_end
+    100026: Head
+    100028: Head_end
+    400000: Armature
+    400002: Back
+    400004: Back_Leg_L
+    400006: Back_Leg_L_end
+    400008: Back_Leg_R
+    400010: Back_Leg_R_end
+    400012: //RootNode
+    400014: Cheast
+    400016: Cube
+    400018: Front_Leg_L
+    400020: Front_Leg_L_end
+    400022: Front_Leg_R
+    400024: Front_Leg_R_end
+    400026: Head
+    400028: Head_end
     2100000: Material
-    2300000: //RootNode
-    3300000: //RootNode
     4300000: Cube
+    7400000: Armature|Boar_Attack
+    7400002: Armature|Boar_Dead
+    7400004: Armature|Boar_Idle
+    7400006: Armature|Boar_Run
+    9500000: //RootNode
+    13700000: Cube
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -60,8 +92,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -86,7 +118,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

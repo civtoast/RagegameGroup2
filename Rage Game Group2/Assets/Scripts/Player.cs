@@ -27,11 +27,11 @@ public class Player : MonoBehaviour
         transform.Translate(movement * Time.deltaTime * moveSpeed);
         transform.Rotate(rotation * Time.deltaTime * rotationSpeed);
         animator.SetFloat("Forward", vertical);
-        animator.SetFloat("Strafe", horizontal);
+        animator.SetFloat("Turn", horizontal);
 
 
 
-
+        //  animator.SetFloat("Strafe", horizontal);     Neil come on ou .
     }
 }
 

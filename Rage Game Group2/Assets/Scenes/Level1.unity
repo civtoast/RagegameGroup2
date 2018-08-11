@@ -461,7 +461,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4092209695461920, guid: b4649fe5fec260a4c9841ea802049ca1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.94
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4092209695461920, guid: b4649fe5fec260a4c9841ea802049ca1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -889,14 +889,28 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.9118048
-  m_Height: 10.529897
+  m_Height: 10.217983
   m_Direction: 1
-  m_Center: {x: 0, y: 5.270966, z: 0.067941464}
+  m_Center: {x: 0, y: 5.155957, z: 0.067941464}
 --- !u!95 &1683344307 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95773322609988734, guid: b4649fe5fec260a4c9841ea802049ca1,
     type: 2}
   m_PrefabInternal: {fileID: 750126703}
+--- !u!64 &1683344308
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1683344303}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_SkinWidth: 0.1
+  m_Mesh: {fileID: 4300014, guid: d1aeb8f4ee2ddf347aa5121f97f19e87, type: 3}
 --- !u!1001 &1895687837
 Prefab:
   m_ObjectHideFlags: 0

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/UI Scenes/Settings UI/Home Screen UI.unity
+    guid: 86fad2f731a40124c80056130864e6dc
+  - enabled: 1
+    path: Assets/UI Scenes/Settings UI/AUDIO UI.unity
+    guid: e5b101be5f8645d4f991f528d61efdc3
+  - enabled: 1
+    path: Assets/UI Scenes/Settings UI/Settings UI.unity
+    guid: a5fc0eee335b3a049a503cf105716c09
+  - enabled: 1
+    path: Assets/UI Scenes/Settings UI/VISUAL UI.unity
+    guid: 10dbd0792837b6046b5e067bc2b8ec13
+  - enabled: 1
+    path: Assets/UI Scenes/Settings UI/Game Over UI.unity
+    guid: 65b81c8dddc989e4fa852a5a47546f12
+  - enabled: 1
+    path: Assets/UI Scenes/In Game UI.unity
+    guid: 489e10de93e339a4589e8969d208b40c

@@ -21,11 +21,11 @@ public class Player : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
 
 
-        Vector3 movement = new Vector3(0f, 0f, vertical);
-        Vector3 rotation = new Vector3(0f, horizontal, 0f);
+       Vector3 movement = new Vector3(0f, 0f, vertical);
+       Vector3 rotation = new Vector3(0f, horizontal, 0f);
 
-        transform.Translate(movement * Time.deltaTime * moveSpeed);
-        transform.Rotate(rotation * Time.deltaTime * rotationSpeed);
+       transform.Translate(movement * Time.deltaTime * moveSpeed);
+       transform.Rotate(rotation * Time.deltaTime * rotationSpeed);
         animator.SetFloat("Forward", vertical);
         animator.SetFloat("Turn", horizontal);
 

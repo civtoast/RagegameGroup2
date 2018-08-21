@@ -685,7 +685,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4092209695461920, guid: b4649fe5fec260a4c9841ea802049ca1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.73
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4092209695461920, guid: b4649fe5fec260a4c9841ea802049ca1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -715,11 +715,6 @@ Prefab:
       propertyPath: m_Name
       value: Witch
       objectReference: {fileID: 0}
-    - target: {fileID: 137871406893667934, guid: b4649fe5fec260a4c9841ea802049ca1,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a8256710438667245bb0c1bc6846bfe0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4649fe5fec260a4c9841ea802049ca1, type: 2}
   m_IsPrefabAsset: 0
@@ -1184,6 +1179,11 @@ Prefab:
     - target: {fileID: 4314691267427074, guid: 7207e3b401d3fa04ab26cfbfc4dee12a, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 64745460584643080, guid: 7207e3b401d3fa04ab26cfbfc4dee12a,
+        type: 2}
+      propertyPath: m_Convex
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7207e3b401d3fa04ab26cfbfc4dee12a, type: 2}

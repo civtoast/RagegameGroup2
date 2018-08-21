@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    public Camera camera;
     public float moveSpeed = 5f;
     public float rotationSpeed = 180f;
     public Animator animator;

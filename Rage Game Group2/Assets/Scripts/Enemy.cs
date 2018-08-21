@@ -15,13 +15,14 @@ public class Enemy : MonoBehaviour
     private NavMeshAgent agent;
     private WaypointSolver wpSolver;
     private Player player;
-
+    public Animator animator;
     // Use this for initialization
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         wpSolver = GetComponent<WaypointSolver>();
         player = FindObjectOfType<Player>();
+        animator.SetFloat("Walk", 1);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -41,6 +42,7 @@ public class Enemy : MonoBehaviour
             {
                 state = EnemyState.Patrol;
                 wpSolver.StartPatrolling();
+               // animator.SetFloat("Walk", 1);
             }
         }
     }
@@ -48,9 +50,11 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("Walk", agent.velocity.magnitude);
         if (state == EnemyState.Chase)
         {
             agent.SetDestination(player.transform.position);
+           // animator.SetFloat("Walk" , 1);
         }
     }
 }

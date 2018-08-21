@@ -10,7 +10,7 @@ public class WaypointSolver : MonoBehaviour
 	private NavMeshAgent agent;
 	private Transform currentWaypoint = null;
 
-	public TextMesh debug;
+	
 
 	private bool isPatrolling = true;
 
@@ -38,14 +38,14 @@ public class WaypointSolver : MonoBehaviour
 	{
 		SetWaypoint();
 		
-		//if (currentWaypoint == null) return;
+		if (currentWaypoint == null) return;
 		
-		//debug.text = Vector3.Distance(transform.position, currentWaypoint.position).ToString();
+		
 		if (agent.remainingDistance < tolerance)
-		//if (Vector3.Distance(transform.position, currentWaypoint.position) < tolerance)
+	
 		{
 			waypointIndex = waypoints.IncrementIndex(waypointIndex);
-			//SetWaypoint();
+			SetWaypoint();
 		}
 		
 		

@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float moveSpeed = 5f;
     public float rotationSpeed = 180f;
     public Animator animator;
+    public Camera Camera;
        
     void Start()
     {
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour
        transform.Rotate(rotation * Time.deltaTime * rotationSpeed);
         animator.SetFloat("Forward", vertical);
         animator.SetFloat("Turn", horizontal);
+        
 
 
 

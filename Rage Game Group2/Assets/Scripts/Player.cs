@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Camera camera;
+    public Camera Camera;
     public float moveSpeed = 5f;
     public float rotationSpeed = 180f;
     public Animator animator;
-    public Camera Camera;
+    
        
     void Start()
     {

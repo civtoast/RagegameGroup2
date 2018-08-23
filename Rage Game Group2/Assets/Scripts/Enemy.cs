@@ -6,7 +6,8 @@ using UnityEngine.AI;
 public enum EnemyState
 {
     Patrol,
-    Chase
+    Chase,
+    Dead
 }
 
 public class Enemy : MonoBehaviour
@@ -31,6 +32,7 @@ public class Enemy : MonoBehaviour
         {
             wpSolver.StopPatrolling();
             state = EnemyState.Chase;
+            animator.SetBool("Attack", true);
         }
     }
 
@@ -40,9 +42,9 @@ public class Enemy : MonoBehaviour
         {
             if (state == EnemyState.Chase)
             {
-                state = EnemyState.Patrol;
-                wpSolver.StartPatrolling();
-               // animator.SetFloat("Walk", 1);
+                // state = EnemyState.Patrol;
+                // wpSolver.StartPatrolling();
+                animator.SetBool("Attack", false);
             }
         }
     }
@@ -54,7 +56,7 @@ public class Enemy : MonoBehaviour
         if (state == EnemyState.Chase)
         {
             agent.SetDestination(player.transform.position);
-           // animator.SetFloat("Walk" , 1);
+           
         }
     }
 }
